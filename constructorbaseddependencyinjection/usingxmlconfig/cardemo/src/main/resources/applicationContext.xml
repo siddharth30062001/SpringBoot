@@ -1,0 +1,19 @@
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+    <bean class="org.example.Car">
+        <constructor-arg ref="engine">
+
+        </constructor-arg>
+    </bean>
+
+    <bean id="engine" class="org.example.Engine">
+
+    </bean>
+
+</beans>
